@@ -99,3 +99,8 @@ func isValidLogLevel(level string) bool {
 
 	return false
 }
+
+// IsEnabled returns true if something log level is set
+func IsEnabled() bool {
+	return len(string(LogLevel())) > 0
+}
